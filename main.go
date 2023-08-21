@@ -6,11 +6,9 @@ Version: v0.0.1
 
 package main
 
-import (
-	"fmt"
-	"resi_nest/resi/divisor"
-	"resi_nest/resi/client"
-)
+import "fmt"
+import "github.com/1chooo/resi_nest/resi/divisor"
+import "github.com/1chooo/resi_nest/resi/client"
 
 func main() {
 	fmt.Println("Hello Go")
