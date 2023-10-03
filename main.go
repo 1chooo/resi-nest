@@ -6,14 +6,16 @@ Version: v0.0.1
 
 package main
 
-import "fmt"
-import "github.com/1chooo/resi_nest/resi/divisor"
-import "github.com/1chooo/resi_nest/resi/client"
+import (
+	"fmt"
+
+	"github.com/1chooo/resi_nest/resi/client"
+	"github.com/1chooo/resi_nest/resi/server"
+)
 
 func main() {
 	fmt.Println("Hello Go")
 	client.HelloClient()
 	fmt.Println("Executing main.go in resi_nest")
-	remainders := divisor.CalculateRemainders(100, 7)
-	fmt.Println("Remainders:", remainders)
+	server.HelloServer()
 }
